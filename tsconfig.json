@@ -48,6 +48,7 @@
     "removeComments": true,
     "skipLibCheck": true,
     "noEmitHelpers": false,
-    "importHelpers": true
+    "importHelpers": true,
+    "allowSyntheticDefaultImports": true
   }
 }
