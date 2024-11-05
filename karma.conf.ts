@@ -48,7 +48,6 @@ module.exports = (config: Config): void => {
             '@stoplight/spectral-test-utils/matchers': path.join(__dirname, './test-utils/matchers.ts'),
             nimma: require.resolve('./node_modules/nimma/dist/legacy/cjs/index.js'),
             'nimma/fallbacks': require.resolve('./node_modules/nimma/dist/legacy/cjs/fallbacks/index.js'),
-            'nimma/legacy': require.resolve('./node_modules/nimma/dist/legacy/cjs/index.js'),
             'node-fetch': require.resolve('./__karma__/fetch'),
             '^rollup$': 'rollup/dist/rollup.browser.js',
             fs: require.resolve('./__karma__/fs'),

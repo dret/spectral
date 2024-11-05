@@ -21,8 +21,7 @@
       "@stoplight/spectral-test-utils": ["test-utils/index.ts"],
       "@stoplight/spectral-test-utils/matchers": ["test-utils/matchers.ts"],
 
-      "nimma/fallbacks": ["node_modules/nimma/dist/cjs/fallbacks/"],
-      "nimma/legacy": ["node_modules/nimma/dist/legacy/cjs/"]
+      "nimma/fallbacks": ["node_modules/nimma/dist/cjs/fallbacks/"]
     },
     "moduleResolution": "node",
     "target": "ES2019",
@@ -48,7 +47,6 @@
     "removeComments": true,
     "skipLibCheck": true,
     "noEmitHelpers": false,
-    "importHelpers": true,
-    "allowSyntheticDefaultImports": true
+    "importHelpers": true
   }
 }

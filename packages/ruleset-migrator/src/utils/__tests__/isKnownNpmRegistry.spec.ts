@@ -9,11 +9,10 @@ describe('isKnownNmRegistry util', () => {
     expect(isKnownNpmRegistry(input)).toBe(true);
   });
 
-  it.each([
-    'ftp://unpkg.com/spectral-aws-apigateway-ruleset',
-    '/nimma/legacy',
-    'https://baz.unpkg.com/spectral-aws-apigateway-ruleset',
-  ])('given unrecognized %s entity, should return false', input => {
-    expect(isKnownNpmRegistry(input)).toBe(false);
-  });
+  it.each(['ftp://unpkg.com/spectral-aws-apigateway-ruleset', 'https://baz.unpkg.com/spectral-aws-apigateway-ruleset'])(
+    'given unrecognized %s entity, should return false',
+    input => {
+      expect(isKnownNpmRegistry(input)).toBe(false);
+    },
+  );
 });
