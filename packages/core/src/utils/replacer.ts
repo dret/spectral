@@ -1,5 +1,6 @@
 import { Dictionary } from '@stoplight/types';
-import _eval from 'simple-eval';
+// eslint-disable-next-line @typescript-eslint/no-var-requires, @typescript-eslint/no-unsafe-assignment
+const simpleEval = require('simple-eval');
 
 export type Transformer<V = Record<string, unknown>> = (this: V, ...args: unknown[]) => string;
 
@@ -24,7 +25,8 @@ export class Replacer<V extends Record<string, unknown>> {
 
       if (shouldEvaluate) {
         return String(
-          _eval(identifier, {
+          // eslint-disable-next-line @typescript-eslint/no-unsafe-call
+          simpleEval(identifier, {
             ...Object.entries(this.functions).reduce((fns, [name, fn]) => {
               fns[name] = fn.bind(values);
               return fns;
