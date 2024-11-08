@@ -127,6 +127,10 @@
     "ts-node": "^10.8.2",
     "typescript": "^4.4.4"
   },
+  "resolutions": {
+    "nimma/jsep": "1.2.0",
+    "simple-eval/jsep": "1.2.0"
+  },
   "lint-staged": {
     "*.{ts,js}": [
       "eslint --fix --cache --cache-location .cache/.eslintcache"
