@@ -129,7 +129,8 @@
   },
   "resolutions": {
     "nimma/jsep": "1.2.0",
-    "simple-eval/jsep": "1.2.0"
+    "simple-eval/jsep": "1.2.0",
+    "jsonpath-plus/jsep": "1.2.0"
   },
   "lint-staged": {
     "*.{ts,js}": [
