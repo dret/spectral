@@ -1,6 +1,6 @@
 import { Dictionary } from '@stoplight/types';
-// eslint-disable-next-line @typescript-eslint/no-var-requires, @typescript-eslint/no-unsafe-assignment
-const simpleEval = require('simple-eval');
+// eslint-disable-next-line @typescript-eslint/no-var-requires, @typescript-eslint/no-unsafe-assignment, @typescript-eslint/strict-boolean-expressions, @typescript-eslint/no-unsafe-member-access
+const simpleEval = require('simple-eval').default || require('simple-eval');
 
 export type Transformer<V = Record<string, unknown>> = (this: V, ...args: unknown[]) => string;
 
