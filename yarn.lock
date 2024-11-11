@@ -7210,6 +7210,15 @@ __metadata:
   languageName: node
   linkType: hard
 
+"force-resolutions@npm:^1.0.11":
+  version: 1.0.11
+  resolution: "force-resolutions@npm:1.0.11"
+  bin:
+    force-resolutions: dist/index.js
+  checksum: 47aaf0ae6c798832ea1ee7b2f879afd69021b82c89975fa24f327b2bf19160d438753d3489bb1d4698c0d8062bf1ddfce91b0217cd137bf2d847f5aa47cb690e
+  languageName: node
+  linkType: hard
+
 "foreground-child@npm:^3.1.0":
   version: 3.3.0
   resolution: "foreground-child@npm:3.3.0"
@@ -12512,6 +12521,7 @@ __metadata:
     fast-glob: ^3.2.7
     fetch-mock: ^9.11.0
     file-entry-cache: ^6.0.1
+    force-resolutions: ^1.0.11
     husky: ^7.0.4
     jest: ^29.7.0
     jest-mock: ^29.7.0
